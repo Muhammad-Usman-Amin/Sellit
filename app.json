@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Sellit",
+    "slug": "Sellit",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFD82E"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.playu2u.sellit",
+      "buildNumber": "1.0.0"
+    },
+    "description":"An Ecommerce App for selling extras!",
+    "notification":{
+      "iosDisplayInForeground": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#FFc840"
+      },
+      "package": "com.playu2u.sellit",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "20dab9b98091c9a60453bce78bfb581b"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {
+            
+          }
+        }
+      ]
+    }
+  }
+}
